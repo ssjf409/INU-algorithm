@@ -50,6 +50,7 @@ class LinkedList:
             new_node.next = self.head
             self.head = new_node
             return
+
         node = self.get_node(index-1)
         next_node = node.next
         node.next = new_node
