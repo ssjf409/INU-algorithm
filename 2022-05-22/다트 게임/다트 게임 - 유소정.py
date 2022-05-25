@@ -18,6 +18,7 @@ def solution(dartResult):
             li[i] **= 3
 
         elif n == "*":
+            # 예외 처리
             if i == 0:
                 li[i] *= 2
 
@@ -27,7 +28,9 @@ def solution(dartResult):
 
         elif n == "#":
             li[i] *= -1
+
         else:
+            # 예외 처리
             if n == "K":
                 n = 10
             li.append(int(n))
