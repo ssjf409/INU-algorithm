@@ -8,8 +8,7 @@ def solution(files):
         head = ""
         number = ""
         tail = ""
-        
-        
+
         for i, c in enumerate(file):
             if c.isdigit():
                 if len(head) != 0: # number 위치에 해당하는 글자를 읽은 상태다.
@@ -24,8 +23,7 @@ def solution(files):
         print(head, number, tail)
         
         parsed_files.append([head, number, tail])
-        
-    sorted_files = sorted(parsed_files, key = lambda x : (x[0].lower(), int(x[1])))
+        sorted_files = sorted(parsed_files, key=lambda x: (x[0].lower(), int(x[1])))
     
     for file in sorted_files:
         answer.append("".join(file))
