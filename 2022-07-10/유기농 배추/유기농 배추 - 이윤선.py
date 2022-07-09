@@ -6,7 +6,7 @@ import sys
 input = sys.stdin.readline
 
 
-def bfs(graph,visited,start,queue, N,M):
+def bfs(graph,visited,start,queue):
     dx = [1,-1,0,0] 
     dy = [0,0,1,-1]
 
@@ -48,7 +48,7 @@ for _ in range(T):
         start = [i,j]
         if start in visit:
             continue
-        visit = bfs(graph, visit, start, queue, N,M)
+        visit = bfs(graph, visit, start, queue)
         count += 1
 
     print(count)
