@@ -23,3 +23,6 @@ while stack:
             stack.append(node_node)
 
 print(len(visit)-1)
+
+
+# 끊임없이 이어져 있기 때문에 (최단거리 찾는 문제 x) dfs를 선택하여 풀었다.
