@@ -1,4 +1,5 @@
-#인접한 노드르 탐색하여 문제를 풀어야 함으로 bfs를 써야 함
+#인접한 노드르 탐색하여 문제를 풀어야 함으로 bfs를 써야 한다고 생각했는ㄴ데 시간초과 ㅎ ㅎ ㅎ ㅎ
+#내일 다시 풀어야짓..
 
 from collections import deque
 import sys
