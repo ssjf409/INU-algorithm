@@ -33,10 +33,9 @@ while queue:
 
 
 for i in range(N):
-    if 0 in board:
+    if 0 in board[i]:
         print(-1)
         break
-    else:
-        max_answer = max(max(board[i]),max_answer)
-
-print(max_answer-1)
+    max_answer = max(max(board[i]),max_answer)
+    if i == N-1:
+        print(max_answer-1)
