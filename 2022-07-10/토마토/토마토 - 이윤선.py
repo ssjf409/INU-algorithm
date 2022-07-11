@@ -1,7 +1,8 @@
 from collections import deque
 
 M, N = map(int, input().split())
-
+#bfs ㅁㅜㄹㅂㅏㅇㅇㅜㄹ...ㅍㅓㅈㅣㄴㅡㄴㄴㅡㄲㅣㅁ 
+#ㅅㅣㄱㅏㄴㅇㅔㄸㅏㄹㅏㅅㅓ ㄴㅡㄹㅇㅓㄴㅏㅁ
 
 board = []
 for i in range(N):
@@ -36,6 +37,8 @@ for i in range(N):
     if 0 in board[i]:
         print(-1)
         break
+
     max_answer = max(max(board[i]),max_answer)
+    
     if i == N-1:
         print(max_answer-1)
