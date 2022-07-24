@@ -30,4 +30,5 @@ for _ in range(M):
     target = int(input())
     left = binary_search(target, data)
     print(name_dic[str(data[left])])
-    
+
+#커밋이왜안되냐아
