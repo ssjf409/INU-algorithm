@@ -16,8 +16,7 @@ for _ in range(N):
 for k in range(N):
     for i in range(N):
         for j in range(N):
-            if party[i][j] > party[i][k] + party[k][j]:
-                party[i][j] = party[i][k] + party[k][j]
+            party[i][j] = min(party[i][j], party[i][k] + party[k][j])
 
 for _ in range(M):
     A, B, C =  map(int,input().split())
